@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+
+}
+
+:root{
+    --bg-color: #000000;
+    --bg-2-color: #FFF9E5;
+    --btn: #FF0B55;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    height: 10vh;
+    background-color: var(--bg-color);
+    color: #fff;
+    align-items: center;
+}
+
+.logo{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+input{
+    height: 40px;
+    border-radius: 8px;
+    width: 15%;
+    outline: none;
+    padding: 1rem;
+    border: none;
+    font-size: 1rem;
+}
+
+input:focus{
+    outline: 2px solid #6e6d6d;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(4,24%);
+    grid-template-rows: auto;
+    place-content: center;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.notfound{
+    text-align: center;
+    font-weight: 500;
+    font-size: 3rem;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    display: none;
+}
+
+.unhide{
+    display: block;
+}
+
+.card{
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-radius: 8px;
+    text-wrap: pretty;
+    box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.08),
+    -4px -4px 12px rgba(0, 0, 0, 0.08);
+    padding: 1rem;
+}
+
+.img-container{
+    width: 100%;
+    height: 200px;
+}
+
+.img-container>img{
+    height: 100%;
+    width: 100%;
+    border-radius: 3px ;
+    object-fit: cover;
+    object-position: center;
+}
+
+.news-container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    padding-top: 1rem;
+    padding-left: 5px;
+    align-items: flex-start;
+    justify-content: flex-end;
+    text-align: left;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.news-container>p{
+  display: -webkit-box;
+  line-clamp: 3; /* show only 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.btn{
+    outline: none;
+    border: none;
+    height: 2.5rem;
+    width: 5rem;
+    background-color: var(--btn);
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.btn:hover{
+    transform: scale(.95);
+}
