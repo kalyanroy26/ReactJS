@@ -27,7 +27,6 @@ function App() {
                 key={index}
                 {...product}
               >
-
               </ProductCard>
             )
             )
